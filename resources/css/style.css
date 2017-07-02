@@ -1,3 +1,7 @@
+div {
+    border: 1px solid black;
+}
+
 /*Header section styling*/
 header {
     background-color: #FFF;
@@ -22,15 +26,33 @@ nav li {
 /*Banner section styling*/
 banner {
     top: 64px;
+    display: inline-flex;
+    align-content: center;
+    position: relative;
+    width: 100%;
+    /*TODO hex improved colors*/
+    color: purple;
+    background-color: pink;
+}
+
+banner img {
+    margin: 32px 24px;
+    width: 60%;
+    height: 100%;
+}
+
+banner div {
     display: flex;
     flex-direction: column;
+    align-items: left;
     justify-content: center;
-    align-items: center;
-    margin: auto;
-    position: relative;
-    /*height: TODO;*/
-    /*width: TODO;*/
+    margin-left: 16px;
 }
+
+
+
+
+
 
 #information {
     position: relative;
