@@ -1,3 +1,53 @@
-p {
-    color: pink;
+/*Header section styling*/
+header {
+    background-color: #FFF;
+    height: 64px;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 24px;
+}
+
+.logo {
+    margin-left: 24px;
+}
+
+/*Banner section styling*/
+banner {
+    top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    /*height: TODO;*/
+    /*width: TODO;*/
+}
+
+#information {
+    position: relative;
+    top: 64px;
+}
+
+#courses {
+    position: relative;
+    top: 64px;
+}
+
+#thesis {
+    position: relative;
+    top: 64px;
+}
+
+footer {
+    position: relative;
+    top: 64px;
 }
