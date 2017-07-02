@@ -49,26 +49,118 @@ banner div {
     margin-left: 16px;
 }
 
-
-
-
-
-
-#information {
-    position: relative;
-    top: 64px;
+banner_info {
+    /*TODO*/
 }
 
+banner_info,
+info_column2_items {
+    /*TODO not necessarily similar enough to do multi-select, but close enough to start*/
+}
+
+
+/*Information Section Styling*/
+#information,
+#thesis {
+    top: 64px;
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*TODO hex improved colors*/
+    color: green;
+    background-color: lightgreen;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 24px;
+    width: 60%;
+}
+
+.column1 img {
+    height: 60%;
+    min-height: 60%;
+}
+
+.column2{
+    margin: 32px 32px;
+    width: 423px;
+}
+
+.mobile {
+    display: none;
+}
+
+.column2-item {
+    display: inline-flex;
+    align-content: center;
+    position: relative;
+    width: 100%;
+    color: darkblue;
+    background-color: lightcyan;
+}
+
+.column2-item img {
+    width: 35%;
+    height: 100%;
+}
+
+.column2-item div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+
+/*Courses Section Styling*/
 #courses {
     position: relative;
     top: 64px;
+    background-color: lightsalmon;
 }
 
+#course_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.course_item {
+    height: 244px; /*placeholder*/
+    width: 20%; /*placeholder*/
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.course_item img { /*placeholder*/
+    height: 100px;
+    width: auto;
+}
+
+/*Thesis Section Styling*/
 #thesis {
     position: relative;
     top: 64px;
+    display: flex;
+    flex-direction: column;
 }
 
+#thesis_info {
+    display: flex;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+/*Footer Section Styling*/
 footer {
     position: relative;
     top: 64px;
