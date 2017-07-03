@@ -177,7 +177,6 @@ banner div {
 }
 
 banner a {
-    /*TODO fix colors for mobile*/
     background-color: #212121;
     width: 100%;
     padding: 8px 0px;
@@ -360,11 +359,12 @@ banner a:hover {
     margin: 32px;
     display: flex;
     flex-direction: column;
+    background-color: #F5F5F5;
 }
 
 .course_item img {
-    height: 100px;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 
 .course_item h4 {
@@ -393,7 +393,6 @@ banner a:hover {
     }
 
     #courses h2 {
-        /*TODO font fix to be like h1*/
         padding: 32px 0px 8px;
     }
 
@@ -506,12 +505,12 @@ footer {
     top: 64px;
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid lightgreen;
     padding: 24px;
 }
 
 footer li {
     display: inline-block;
+    font-size: .75em;
 }
 
 /**/
