@@ -2,6 +2,9 @@ div {
     border: 1px solid black;
 } /*TODO Remove, using for layout*/
 
+body {
+    font-family: sans-serif; /*TODO fancify where I pull this from*/
+}
 
 h1 {
 
@@ -20,7 +23,7 @@ h4 {
 }
 
 h5 {
-    
+    text-transform: uppercase;
 }
 
 p {
@@ -32,7 +35,7 @@ small {
 }
 
 a {
-
+    text-decoration-line: none;
 }
 
 h1,
@@ -62,8 +65,15 @@ nav li {
     margin-right: 24px;
 }
 
-.logo {
+#logo {
     margin-left: 24px;
+    align-items: center;
+    display: flex;
+    width: auto;
+}
+
+#mobile_nav {
+    display: none;
 }
 
 /*Banner section styling*/
@@ -109,9 +119,8 @@ info_column2_items {
 }
 
 
-/*Information Section Styling*/
-#information,
-#thesis {
+/*Two Column Layout Styling (Info and Thesis)*/
+.two-column-layout {
     top: 64px;
     display: inline-flex;
     position: relative;
@@ -136,10 +145,6 @@ info_column2_items {
 .column2 {
     width: 423px;
     margin: 16px;
-}
-
-#info .column2 {
-    margin-top: 16px;
 }
 
 .mobile {
@@ -170,11 +175,21 @@ info_column2_items {
 }
 
 
+/*Info Section Styling*/
+#info .column2 {
+    margin-top: 16px;
+}
+
 /*Courses Section Styling*/
 #courses {
     position: relative;
     top: 64px;
     background-color: lightsalmon;
+}
+
+#courses h2 {
+    text-align: center;
+    padding: 32px 0px 0px;
 }
 
 #course_list {
@@ -216,17 +231,28 @@ info_column2_items {
     flex-direction: column;
 }
 
+#thesis h2 {
+    text-align: center;
+    padding: 32px 0px;
+}
+
+#thesis .column1,
+#thesis .column2 {
+    margin-top: 0px;
+}
+
 #thesis_info {
     display: flex;
+}
+
+#thesis_info .column1 h4 {
+    padding-bottom: 24px;
 }
 
 video {
     width: 100%;
     height: auto;
-}
-
-#thesis_content_video {
-
+    padding-bottom: 24px;
 }
 
 /*Footer Section Styling*/

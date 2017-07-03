@@ -1,16 +1,18 @@
 <!DOCTYPE html>
     <head>
         <title>Colmar Academy</title>
-        <link rel="icon" href="resources/images/TODOfavicon.ico" type="image/x-icon">
+        <link rel="icon" href="resources/images/logo-favicon.ico" type="image/x-icon">
         <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
         <link href="resources/css/style.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <!--Header Section-->
         <header>
-            <img src="resources/images/ic-logo.svg" alt="stylized image of a lion">
-            <div id="logo_name">
-                <span id="colmar">Colmar</span><span id="academy">Academy</span>
+            <div id="logo">
+                <img src="resources/images/ic-logo.svg" alt="stylized image of a lion">
+                <div id="logo_text">
+                    <span id="colmar">Colmar</span><span id="academy">Academy</span>
+                </div>
             </div>
             <nav>
                 <ul id="desktop_nav">
@@ -39,7 +41,7 @@
         </banner>
 
         
-        <div id="information">
+        <div class="two-column-layout" id="information">
             <div class="column1">
                 <div>
                     <img src="resources/images/information-main.jpg" alt="man reading a book outside">
@@ -86,8 +88,7 @@
 
         <!--Courses section-->
         <div id="courses">
-            Start learning
-            
+            <h2>Start learning</h2>
             <div id="course_list">
                 <div class="course_item">
                     <img src="resources/images/course-software.jpg" alt="two monitors and a light on a desk">
@@ -134,8 +135,8 @@
         </div>
 
 
-        <div id="thesis">
-            Thesis exhibit
+        <div  class="two-column-layout" id="thesis">
+            <h2>Thesis exhibit</h2>
             <div id="thesis_info">
                 <div class="column1">
                     <div id="thesis_content_video">
@@ -143,7 +144,6 @@
                             <source >
                             Your browser does not support the video tag.
                         </video>
-                
                         <h4>Reimagine urban</h4>
                         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
                     </div class="thesis_content_video">
