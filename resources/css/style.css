@@ -102,9 +102,6 @@ banner div {
     margin: 16px;
 }
 
-
-
-
 banner a {
     background-color: darkslategray;
     width: 100%;
@@ -113,11 +110,9 @@ banner a {
     text-align: center;
 }
 
-banner_info,
-info_column2_items {
-    /*TODO not necessarily similar enough to do multi-select, but close enough to start*/
+banner a:hover {
+    /*TODO*/
 }
-
 
 /*Two Column Layout Styling (Info and Thesis)*/
 .two-column-layout {
@@ -159,6 +154,12 @@ info_column2_items {
     /*TODO hex improved colors*/
     color: darkblue;
     background-color: lightcyan;
+}
+
+.column2-item:hover,
+.course_item:hover {
+    background-color: greenyellow;
+    color: white;
 }
 
 .column2-item img {
