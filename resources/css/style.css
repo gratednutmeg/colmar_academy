@@ -90,6 +90,8 @@ p {
    color: #757575; 
 }
 
+/**/
+
 
 /*Header section styling - Desktop*/
 header {
@@ -161,6 +163,7 @@ banner div {
 }
 
 banner a {
+    /*TODO fix colors for mobile*/
     background-color: #212121;
     width: 100%;
     padding: 8px 0px;
@@ -275,37 +278,26 @@ banner a:hover {
 
 /*Info Section Styling - Mobile*/
 @media only screen and (max-width: 480px) {
-    .two-column-layout {
-        top: 64px;
-        display: inline-flex;
-        position: relative;
+    #information .column1 {
+        display: none;
+    }
+
+    #information .column2 {
         width: 100%;
-        height: 100%;
-        background-color: #e6e6e6;
+        margin: 16px 0px 32px;
     }
 
-    .column1 {
-        display: flex;
-        flex-direction: column;
-        margin: 32px 24px;
-        width: 60%;
-    }
-
-    .column1 img {
-        width: 100%;
-    }
-
-    .column2 {
-        width: 423px;
-        margin: 16px;
+    .desktop {
+        display: none;
     }
 
     .mobile {
-        display: none;
+        display: initial;
     }
 
     .column2-item {
         display: inline-flex;
+        flex-direction: column;
         align-content: center;
         position: relative;
         width: 100%;
@@ -316,9 +308,10 @@ banner a:hover {
     }
 
     .column2-item img {
-        width: 35%;
-        height: 100%;
-        margin: 16px;
+        width: auto;
+        height: auto;
+        margin: 0px;
+        padding: 16px;
     }
 
     .column2-item div {
@@ -326,10 +319,7 @@ banner a:hover {
         flex-direction: column;
         align-items: left;
         justify-content: center;
-    }
-
-    #info .column2 {
-        margin-top: 16px;
+        padding: 0px 32px;
     }
 }
 
@@ -353,13 +343,13 @@ banner a:hover {
 }
 
 .course_item {
-    width: 20%; /*placeholder*/
+    width: 25%;
     margin: 32px;
     display: flex;
     flex-direction: column;
 }
 
-.course_item img { /*placeholder*/
+.course_item img {
     height: 100px;
     width: auto;
 }
@@ -382,7 +372,53 @@ banner a:hover {
 
 /*Courses Section Styling - Mobile*/
 @media only screen and (max-width: 480px) {
+    #courses {
+        position: relative;
+        top: 64px;
+        background-color: #e6e6e6;
+        padding-bottom: 24px;
+    }
 
+    #courses h2 {
+        /*TODO font fix to be like h1*/
+        padding: 32px 0px 8px;
+    }
+
+    #course_list {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .course_item {
+        width: auto;
+        margin: 8px 16px;
+        background-color: #cccccc;
+    }
+
+    .course_item img,
+    .course_item h5,
+    .course_item p {
+        display: none;
+    }
+
+    .course_item h4 {
+        padding: 16px;
+    }
+
+    .course_item h5 {
+        padding: 8px 16px 8px 16px;
+    }
+
+    .course_item p {
+        padding: 0px 16px 24px 16px;
+    }
+
+    .course_item:hover {
+        background-color: #e6e6e6;
+    }
 }
 
 /*Thesis Section Styling*/
