@@ -1,25 +1,60 @@
+/*Font Information - Source Sans Pro*/
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v10/toadOcfmlt9b38dHJxOBGCP2LEk6lMzYsRqr3dHFImA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v10/ODelI1aHBYDBqgeIAH2zlJbPFduIYtoLzwST68uhz_Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v10/toadOcfmlt9b38dHJxOBGJkF8H8ye47wsfpWywda8og.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+
 div {
     border: 1px solid black;
 } /*TODO Remove, using for layout*/
 
+
+/*Font Styling*/
 body {
-    font-family: sans-serif; /*TODO fancify where I pull this from*/
+    font-family: 'Source Sans Pro';
+    color: #212121;
 }
 
 h1 {
-
+    font-size: 
+    font-weight: 700;   
 }
 
 h2 {
-
+    font-size: 
 }
 
 h3 {
-
+    font-size: 
+    font-weight: 700;
 }
 
 h4 {
-
+    font-size: 
 }
 
 h5 {
@@ -31,11 +66,12 @@ p {
 }
 
 small {
-
+    font-size: 
 }
 
 a {
     text-decoration-line: none;
+    color: #536DFE;
 }
 
 h1,
@@ -44,8 +80,11 @@ h3 {
     padding-bottom: 24px;
 }
 
-
-
+#academy,
+h5,
+p {
+   color: #757575; 
+}
 
 
 /*Header section styling*/
@@ -60,16 +99,21 @@ header {
     width: 100%;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 24px;
-}
-
 #logo {
     margin-left: 24px;
     align-items: center;
     display: flex;
     width: auto;
+    text-transform: uppercase;
+}
+
+#colmar {
+    color: #000;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 24px;
 }
 
 #mobile_nav {
@@ -83,9 +127,7 @@ banner {
     align-content: center;
     position: relative;
     width: 100%;
-    /*TODO hex improved colors*/
-    color: purple;
-    background-color: pink;
+    background-color: #BDBDBD;
 }
 
 banner img {
@@ -103,7 +145,7 @@ banner div {
 }
 
 banner a {
-    background-color: darkslategray;
+    background-color: #212121;
     width: 100%;
     padding: 8px 0px;
     color: white;
@@ -111,7 +153,8 @@ banner a {
 }
 
 banner a:hover {
-    /*TODO*/
+    background-color: #757575;
+    color: #F5F5F5;
 }
 
 /*Two Column Layout Styling (Info and Thesis)*/
@@ -121,9 +164,7 @@ banner a:hover {
     position: relative;
     width: 100%;
     height: 100%;
-    /*TODO hex improved colors*/
-    color: green;
-    background-color: lightgreen;
+    background-color: #e6e6e6;
 }
 
 .column1 {
@@ -151,15 +192,10 @@ banner a:hover {
     align-content: center;
     position: relative;
     width: 100%;
-    /*TODO hex improved colors*/
-    color: darkblue;
-    background-color: lightcyan;
 }
 
-.column2-item:hover,
-.course_item:hover {
-    background-color: greenyellow;
-    color: white;
+.column2-item:hover {
+    background-color: #FFF;
 }
 
 .column2-item img {
@@ -177,6 +213,7 @@ banner a:hover {
 
 
 /*Info Section Styling*/
+
 #info .column2 {
     margin-top: 16px;
 }
@@ -185,7 +222,7 @@ banner a:hover {
 #courses {
     position: relative;
     top: 64px;
-    background-color: lightsalmon;
+    background-color: #cccccc;
 }
 
 #courses h2 {
@@ -222,6 +259,10 @@ banner a:hover {
 
 .course_item p {
     padding: 0px 16px 24px 16px;
+}
+
+.course_item:hover {
+    background-color: #e6e6e6;
 }
 
 /*Thesis Section Styling*/
