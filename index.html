@@ -135,12 +135,16 @@
         </div>
 
 
-        <div  class="two-column-layout" id="thesis">
+        <div class="two-column-layout" id="thesis">
             <h2>Thesis exhibit</h2>
             <div id="thesis_info">
                 <div class="column1">
                     <div id="thesis_content_video">
-                        <video src="resources/videos/thesis.mp4" type="video/mp4" loop autoplay >
+                        <video class="desktop" src="resources/videos/thesis.mp4" type="video/mp4" loop autoplay >
+                            <source >
+                            Your browser does not support the video tag.
+                        </video>
+                        <video class="mobile" src="resources/videos/thesis.mp4" type="video/mp4" controls >
                             <source >
                             Your browser does not support the video tag.
                         </video>
@@ -175,8 +179,6 @@
                 <li>Privacy</li>
             </ul>
         </footer>
-
-
 
     </body>
 </html>

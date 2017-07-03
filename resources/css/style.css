@@ -26,12 +26,12 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-
-
-div {
-    border: 1px solid black;
-} /*TODO Remove, using for layout*/
-
+/*Mobile Background*/
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: #cccccc;
+    }
+}
 
 /*Font Styling*/
 body {
@@ -45,6 +45,7 @@ h1 {
 }
 
 h2 {
+    font-weight: 700;
     font-size: 2em;
 }
 
@@ -90,7 +91,20 @@ p {
    color: #757575; 
 }
 
-/**/
+/*Mobile Font styling*/
+@media only screen and (max-width: 480px) {
+    h2 {
+        font-weight: 700;
+        font-size: 2.5em; 
+    }
+
+    h3,
+    p,
+    small,
+     {
+        font-size: 1.25em;
+    }
+}
 
 
 /*Header section styling - Desktop*/
@@ -167,7 +181,7 @@ banner a {
     background-color: #212121;
     width: 100%;
     padding: 8px 0px;
-    color: white;
+    color: #F5F5F5;
     text-align: center;
 }
 
@@ -184,8 +198,7 @@ banner a:hover {
     flex-direction: column;
     align-content: center;
     position: relative;
-    /*TODO Fix color*/
-    background-color: #BDBDBD;
+    background-color: #cccccc;
     }
 
     banner img {
@@ -202,16 +215,20 @@ banner a:hover {
         margin: 16px;
     }
 
-    banner a {
-        background-color: #212121;
-        width: 100%;
-        padding: 8px 0px;
-        color: white;
-        text-align: center;
+    banner h3 {
+        font-size: 1em;
     }
 
-    banner a:hover {
+    banner a {
         background-color: #757575;
+        width: 100%;
+        padding: 8px 0px;
+        color: #F5F5F5;
+        text-align: center;
+    }
+    
+    banner a:active {
+        background-color: #212121;
         color: #F5F5F5;
     }
 }
@@ -284,7 +301,7 @@ banner a:hover {
 
     #information .column2 {
         width: 100%;
-        margin: 16px 0px 32px;
+        margin: 16px 0px 32px 0px;
     }
 
     .desktop {
@@ -301,10 +318,6 @@ banner a:hover {
         align-content: center;
         position: relative;
         width: 100%;
-    }
-
-    .column2-item:hover {
-        background-color: #FFF;
     }
 
     .column2-item img {
@@ -421,7 +434,7 @@ banner a:hover {
     }
 }
 
-/*Thesis Section Styling*/
+/*Thesis Section Styling - Desktop*/
 #thesis {
     position: relative;
     top: 64px;
@@ -453,6 +466,40 @@ video {
     padding-bottom: 24px;
 }
 
+/*Thesis Section Styling - Mobile*/
+@media only screen and (max-width: 480px) {
+    #thesis .two-column-layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #thesis_info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column1 {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        width: 100%;
+    }
+
+    video {
+        margin: 0px 0px 24px 0px; 
+        width: 100%;
+        height: 100%;
+    }    
+
+    .column2,
+    .column1 h4,
+    .column1 p {
+        display: none;
+    }
+}
+
+
+
 /*Footer Section Styling*/
 footer {
     position: relative;
@@ -465,4 +512,21 @@ footer {
 
 footer li {
     display: inline-block;
+}
+
+/**/
+@media only screen and (max-width: 480px) {
+    footer {
+        background-color: #e6e6e6;
+        padding: 16px;
+    }
+
+    footer small {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    footer ul {
+        display: none;
+    }
 }
